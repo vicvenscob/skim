@@ -1,0 +1,11 @@
+[package]
+name = "skim"
+version = "0.1.0"
+description = "fuzzy finder in Rust"
+homepage = "https://github.com/skim-rs/skim"
+license = "MIT"
+url = "https://github.com/vicvenscob/skim/archive/refs/heads/master.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/sk /usr/local/bin/sk"
+
+[package.files]
